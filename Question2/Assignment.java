@@ -7,5 +7,23 @@ public class Assignment {
         PolyUnit[] arr2 = {p2,p1}; 
         Poly a = new Poly(arr1);
         Poly b = new Poly(arr2);
+        Poly c = Poly.addPoly(a, b); 
+        Poly d = Poly.multiplyPoly(b, a); 
+        for(PolyUnit i: a.expression){
+            System.out.println("coff: "+i.coffecient+"power: "+i.power); 
+        }
+        System.out.println("--------------");
+        for(PolyUnit i: b.expression){
+            System.out.println("coff: "+i.coffecient+"power: "+i.power); 
+        }
+        System.out.println("--------------");
+        for(PolyUnit i: c.expression){
+            System.out.println("coff: "+i.coffecient+"power: "+i.power); 
+        }
+        System.out.println("--------------");
+        for(PolyUnit i: d.expression){
+            System.out.println("coff: "+i.coffecient+"power: "+i.power); 
+        }
+        System.out.println("--------------");
     }
 }

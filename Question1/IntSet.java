@@ -50,7 +50,7 @@ final class IntSet {
     }
     
     /**
-     * @param s new set to take union with 
+     * @param s new set to take union 
      * @return union set of main and s
      */
     public IntSet union(IntSet s){
@@ -58,5 +58,4 @@ final class IntSet {
         for(int i = 0;i<1000;i++)if(this.arr[i]||s.arr[i])newArr[i]=true; 
         return new IntSet(newArr);
     }
-
 }
