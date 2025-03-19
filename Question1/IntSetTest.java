@@ -8,16 +8,16 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 import org.junit.Test;
 
-class IntSetTest {
+public class IntSetTest {
     @Test
-    void testConstructor() {
+    public void testConstructor() {
         boolean[] arr = new boolean[1000];
         assertDoesNotThrow(() -> new IntSet(arr));
         assertThrows(IllegalArgumentException.class, () -> new IntSet(arr));
     }
 
     @Test
-    void testIsMember() {
+    public void testIsMember() {
         boolean[] arr = new boolean[1000];
         arr[5] = true;
         IntSet set = new IntSet(arr);
@@ -26,7 +26,7 @@ class IntSetTest {
     }
 
     @Test
-    void testSize() {
+    public void testSize() {
         boolean[] arr = new boolean[1000];
         arr[2] = true;
         arr[5] = true;
@@ -37,7 +37,7 @@ class IntSetTest {
     }
 
     @Test
-    void testIsSubSet() {
+    public void testIsSubSet() {
         boolean[] arr1 = new boolean[1000];
         arr1[2] = true;
         arr1[5] = true;
@@ -52,7 +52,7 @@ class IntSetTest {
     }
 
     @Test
-    void testGetComplementSet() {
+    public void testGetComplementSet() {
         boolean[] arr = new boolean[1000];
         arr[2] = true;
         arr[5] = true;
@@ -65,7 +65,7 @@ class IntSetTest {
     }
 
     @Test
-    void testUnion() {
+    public void testUnion() {
         boolean[] arr1 = new boolean[1000];
         arr1[1] = true;
         arr1[5] = true;
