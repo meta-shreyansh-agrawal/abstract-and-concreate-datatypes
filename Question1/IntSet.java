@@ -20,7 +20,7 @@ public class IntSet {
      */
     public boolean isMember(int x)throws IllegalArgumentException{
         if(x<0||x>maxSize)throw new IllegalArgumentException("Set can have number between 1 to "+maxSize);
-        return this.arr[x+1];
+        return this.arr[x-1];
     }
 
     /**
