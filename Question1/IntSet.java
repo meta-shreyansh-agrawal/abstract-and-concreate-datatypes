@@ -1,6 +1,6 @@
 package Question1;
 import java.lang.Math;
-public class IntSet {
+public final class IntSet {
     private final boolean arr[]; 
     int maxSize; 
     /**

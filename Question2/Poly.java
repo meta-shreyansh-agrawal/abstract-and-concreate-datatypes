@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 
-public class Poly{
-    PolyUnit expression[]; 
+public final class Poly{
+    final PolyUnit expression[]; 
 
     Poly(PolyUnit[] expression){
         Arrays.sort(expression,new Comparator<PolyUnit>(){

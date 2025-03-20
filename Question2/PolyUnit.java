@@ -1,4 +1,4 @@
-public class PolyUnit {
+public final class PolyUnit {
     int coffecient; 
     int power; 
 
